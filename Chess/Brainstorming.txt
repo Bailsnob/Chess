@@ -1,0 +1,23 @@
+Nouns:
+	- Game
+	- Board
+		Verbs:
+			?
+	- Player
+		- Verbs:
+			?
+		- Human Player
+			Verbs:
+				- solicit input
+		- AI Player
+	- Piece
+		- King
+		- Queen
+		- Bishop
+		- Pawn
+		- Rook
+		- Knight
+	- Position
+
+Verbs:
+	- 
