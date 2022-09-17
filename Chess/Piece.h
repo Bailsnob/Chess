@@ -7,6 +7,7 @@ class Player;
 class Piece
 {
 public: 
+	//Piece(); // TODO: temporary for testing
 	Piece(Player* player, Position* pos);
 
 protected:

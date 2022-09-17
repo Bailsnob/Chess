@@ -3,8 +3,8 @@
 class Position
 {
 public:
+	Position();
 
 private:
-
 
 };

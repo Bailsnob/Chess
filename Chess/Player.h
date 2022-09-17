@@ -7,6 +7,7 @@ class Piece;
 class Player
 {
 public:
+	Player();
 
 protected:
 	std::vector<Piece*> pieces;
