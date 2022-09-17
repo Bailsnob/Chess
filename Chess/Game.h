@@ -6,10 +6,10 @@
 class Game
 {
 public:
+	Game();
 
 private:
 	HumanPlayer human;
 	ComputerPlayer computer;
 	Board board;
-
 };

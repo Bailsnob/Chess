@@ -1,3 +1,4 @@
+#include <iostream>
 #include "ComputerPlayer.h"
 #include "Rook.h"
 #include "Bishop.h"
@@ -8,21 +9,22 @@
 
 ComputerPlayer::ComputerPlayer()
 {
-	pieces.emplace_back(
-		new Rook(this, nullptr),
-		new Rook(this, nullptr),
-		new Knight(this, nullptr),
-		new Knight(this, nullptr),
-		new Bishop(this, nullptr),
-		new Bishop(this, nullptr),
-		new Pawn(this, nullptr),
-		new Pawn(this, nullptr),
-		new Pawn(this, nullptr),
-		new Pawn(this, nullptr),
-		new Pawn(this, nullptr),
-		new Pawn(this, nullptr),
-		new Pawn(this, nullptr),
-		new Pawn(this, nullptr),
-		new King(this, nullptr),
-		new Queen(this, nullptr));
+	std::cout << "ComputerPlayer()" << std::endl;
+
+	pieces.emplace_back((Piece*)(new Rook(this, nullptr)));
+	pieces.emplace_back((Piece*)(new Rook(this, nullptr)));
+	pieces.emplace_back((Piece*)(new Knight(this, nullptr)));
+	pieces.emplace_back((Piece*)(new Knight(this, nullptr)));
+	pieces.emplace_back((Piece*)(new Bishop(this, nullptr)));
+	pieces.emplace_back((Piece*)(new Bishop(this, nullptr)));
+	pieces.emplace_back((Piece*)(new King(this, nullptr)));
+	pieces.emplace_back((Piece*)(new Queen(this, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(this, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(this, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(this, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(this, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(this, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(this, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(this, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(this, nullptr)));
 }
