@@ -2,8 +2,6 @@
 #include "Position.h"
 #include "Player.h"
 
-class Player;
-
 class Piece
 {
 public: 
