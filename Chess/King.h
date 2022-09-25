@@ -4,7 +4,7 @@
 class King : Piece
 {
 public:
-	King(Player* player, Position* pos);
+	King(Player& player, Position* pos);
 
 private:
 

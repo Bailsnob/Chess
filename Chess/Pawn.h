@@ -4,7 +4,7 @@
 class Pawn : Piece
 {
 public:
-	Pawn(Player* player, Position* pos);
+	Pawn(Player& player, Position* pos);
 
 private:
 

@@ -4,7 +4,7 @@
 class Queen : Piece
 {
 public:
-	Queen(Player* player, Position* pos);
+	Queen(Player& player, Position* pos);
 
 private:
 

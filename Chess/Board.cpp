@@ -6,45 +6,46 @@
 #include "Queen.h"
 #include "King.h"
 #include "Knight.h"
+#include "Game.h"
 
-Board::Board(Game* game)
-	: game(game)
+Board::Board(Game& game)
+	: game{ game }
 {
 	std::cout << "Board()" << std::endl;
 
 	//human's
-	pieces.emplace_back((Piece*)(new Rook(game->getHumanPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Rook(game->getHumanPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Knight(game->getHumanPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Knight(game->getHumanPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Bishop(game->getHumanPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Bishop(game->getHumanPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new King(game->getHumanPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Queen(game->getHumanPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Pawn(game->getHumanPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Pawn(game->getHumanPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Pawn(game->getHumanPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Pawn(game->getHumanPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Pawn(game->getHumanPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Pawn(game->getHumanPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Pawn(game->getHumanPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Pawn(game->getHumanPlayer(), nullptr)));
+	pieces.emplace_back((Piece*)(new Rook(game.human, nullptr)));
+	pieces.emplace_back((Piece*)(new Rook(game.human, nullptr)));
+	pieces.emplace_back((Piece*)(new Knight(game.human, nullptr)));
+	pieces.emplace_back((Piece*)(new Knight(game.human, nullptr)));
+	pieces.emplace_back((Piece*)(new Bishop(game.human, nullptr)));
+	pieces.emplace_back((Piece*)(new Bishop(game.human, nullptr)));
+	pieces.emplace_back((Piece*)(new King(game.human, nullptr)));
+	pieces.emplace_back((Piece*)(new Queen(game.human, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(game.human, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(game.human, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(game.human, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(game.human, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(game.human, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(game.human, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(game.human, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(game.human, nullptr)));
 
 	//computer's
-	pieces.emplace_back((Piece*)(new Rook(game->getComputerPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Rook(game->getComputerPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Knight(game->getComputerPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Knight(game->getComputerPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Bishop(game->getComputerPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Bishop(game->getComputerPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new King(game->getComputerPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Queen(game->getComputerPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Pawn(game->getComputerPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Pawn(game->getComputerPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Pawn(game->getComputerPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Pawn(game->getComputerPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Pawn(game->getComputerPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Pawn(game->getComputerPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Pawn(game->getComputerPlayer(), nullptr)));
-	pieces.emplace_back((Piece*)(new Pawn(game->getComputerPlayer(), nullptr)));
+	pieces.emplace_back((Piece*)(new Rook(game.computer, nullptr)));
+	pieces.emplace_back((Piece*)(new Rook(game.computer, nullptr)));
+	pieces.emplace_back((Piece*)(new Knight(game.computer, nullptr)));
+	pieces.emplace_back((Piece*)(new Knight(game.computer, nullptr)));
+	pieces.emplace_back((Piece*)(new Bishop(game.computer, nullptr)));
+	pieces.emplace_back((Piece*)(new Bishop(game.computer, nullptr)));
+	pieces.emplace_back((Piece*)(new King(game.computer, nullptr)));
+	pieces.emplace_back((Piece*)(new Queen(game.computer, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(game.computer, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(game.computer, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(game.computer, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(game.computer, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(game.computer, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(game.computer, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(game.computer, nullptr)));
+	pieces.emplace_back((Piece*)(new Pawn(game.computer, nullptr)));
 }

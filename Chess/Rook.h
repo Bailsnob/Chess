@@ -4,7 +4,7 @@
 class Rook : Piece
 {
 public:
-	Rook(Player* player, Position* pos);
+	Rook(Player& player, Position* pos);
 
 private:
 

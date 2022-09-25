@@ -1,8 +1,11 @@
 #pragma once
 
+class Game;//forward declaration
+
 class Player
 {
 public:
-	Player();
+	Player(Game& game);
 
+	Game& game;
 };

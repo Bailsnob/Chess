@@ -1,10 +1,12 @@
 #pragma once
 #include "Player.h"
 
-class ComputerPlayer : Player
+class Game;//forward declaration
+
+class ComputerPlayer : public Player
 {
 public:
-	ComputerPlayer();
+	ComputerPlayer(Game& game);
 
 private:
 

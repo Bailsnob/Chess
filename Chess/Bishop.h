@@ -4,7 +4,7 @@
 class Bishop : Piece
 {
 public:
-	Bishop(Player* player, Position* pos);
+	Bishop(Player& player, Position* pos);
 
 private:
 

@@ -4,7 +4,7 @@
 class Knight : Piece
 {
 public:
-	Knight(Player* player, Position* pos);
+	Knight(Player& player, Position* pos);
 
 private:
 
